@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/project-style.css">
+    <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="icon" href="src/wenkang.png">
+    <title>Lee Wen Kang</title>
+</head>
+
+<body>
+    <div id="back-button-block">
+        <div id="back-block">
+            <a href="index.html">
+                <svg width="60px" height="60px" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="black"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                </svg>
+            </a>
+        </div>
+
+    </div>
+    <!-- 
+    This page can be used as a template for other projects.
+    To change projects, just change image, description and "Technologies Used" icons.
+    
+    Page contains an image that represents the project, a short discription abou the project and my experiences
+    and a "Technologies Used" section to tell visitors what kind of technologies were used in the project.
+    -->
+    <section id="project-section">
+        <div id="image-block">
+            <img src="src/project-page-image/DiscordReplica2.png" alt="screenshot of project">
+        </div>
+        <h2 class="text-block">
+            Box With You (Discord Replica)
+        </h2>
+        <div id="link-block">
+            <span id="link-icon">
+                <svg width="15px" height="15px" viewBox="0 0 16 16" class="bi bi-link-45deg" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                    <path
+                        d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
+                </svg>
+            </span>
+            <span><a href="https://todo-app-bb61a.firebaseapp.com/" target="_Blank">Website</a></span>
+        </div>
+        <div class="description-block">
+            Box With You is a React project (WIP). After learning React, I wanted to work on a fairly big project. As I
+            discovered that React was used to make Discord, I felt that that would be an ideal project to embark on. To
+            make the application, I am using Cloud Firestore as my database and using Fireabase authentication as my
+            method of authenticating users.
+        </div>
+        <div class="description-block">
+            During development, I encountered many problems, however after many attempts of googling, I finally figure
+            the solutions. Some of the many problems that I had to solve was, authenticating users, allowing users to
+            chat and making sure that the whole app was efficient. Even-though efficiency is one of my top priorities,
+            it was difficult to maintain it, as it is difficult to remain efficient while developing a large app. Since
+            I did not use any State Manager, I was physically climbing up and down the tree. So to solve this, I
+            decieded to use a State Manager like Redux. By using Redux, I am able to better manage my states
+            more efficiently.
+        </div>
+    </section>
+    <section id="technology-section">
+        <header>
+            <h1>Technologies Used</h1>
+        </header>
+        <div>
+            <article>
+                <a href="https://reactjs.org/" class="icon-container" target="_Blank">
+                    <img src="src/technologies/react.png" alt="react icon">
+                </a>
+                <h2>React</h2>
+            </article>
+            <article>
+                <a href="https://firebase.google.com/" class="icon-container" target="_Blank">
+                    <img src="src/technologies/Firebase.png" alt="firebase icon">
+                </a>
+                <h2>Firebase</h2>
+
+            </article>
+            <article>
+                <a href="https://javascript.info/intro" class="icon-container" target="_Blank">
+                    <img src="src/technologies/javascript.png" alt="javascript icon">
+                </a>
+                <h2>Javascript</h2>
+
+            </article>
+        </div>
+    </section>
+    <footer id="footer-content">
+        <!--
+            Footer area. This area is visible on all pages.
+            This area contains social media links and contains my name.
+        -->
+        <div id="socials-content">
+            <div id="github-block">
+                <a href="https://github.com/SpaceyCodes" target="_blank">
+                    <img id='GitHubIMG' src="src/GItHub.png" alt="GitHub logo">
+                </a>
+
+            </div>
+            <div id="linkedin-block">
+                <a href="https://linkedin.com/in/leewenkang/" target="_blank">
+                    <img id='LinkedInIMG' src="src/LinkedIn.png" alt="LinkedIn Logo">
+                </a>
+
+            </div>
+            <div id="email-block">
+                <a href="mailto:spaceycodes@gmail.com" id="emailIMG">
+                    <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-envelope" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div id="made-by-text">
+            &copy; Lee Wen Kang
+        </div>
+    </footer>
+</body>
+
+</html>

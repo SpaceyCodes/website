@@ -15,7 +15,7 @@
     <div id="back-button-block">
         <div id="back-block">
             <a href="index.html">
-                <svg width="60px" height="60px" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="white"
+                <svg width="60px" height="60px" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="black"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
@@ -33,10 +33,10 @@
     -->
     <section id="project-section">
         <div id="image-block">
-            <img src="src/project-page-image/colorpicker-game-img.png" alt="screenshot of project" width="100%">
+            <img src="src/project-page-image/Todomasterimg.PNG" alt="screenshot of project">
         </div>
         <h2 class="text-block">
-            ColorPicker Game
+            Todo Master
         </h2>
         <div id="link-block">
             <span id="link-icon">
@@ -48,24 +48,20 @@
                         d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
                 </svg>
             </span>
-            <span><a href="https://spaceycodes.github.io/Codes/colourpicker/" target="_Blank">Website</a></span>
-            <span> / </span>
-            <span><a href="https://github.com/SpaceyCodes/Codes/tree/master/colourpicker"
-                    target="_Blank">Github</a></span>
+            <span><a href="https://todo-app-bb61a.firebaseapp.com/" target="_Blank">Website</a></span>
         </div>
         <div class="description-block">
-            The first ever website that I created was a portfolio website. I would follow a tutorial word by word.
-            However after creating my first website, I wanted to build a website completely from scratch. So I decieded
-            to create a game on a website. As this was the first website I created completely by my own (not following
-            tutorial), I encountered many problems. However after diligently looking for answers online and testing the
-            solutions, I would always figure out the solution by trial and error.
+            Todo Master is a note taking web app. To learn React, I decieded to undertake a project to learn more about
+            it. At the initial stage, I was following a tutorial. However, since I was progressing fairly quickly, I
+            decieded to not follow the tutorial and make the web application by myself. As React is fairly similar to
+            Flutter, I was familiar familiar with States and Components. In addition, as React is a Javascript library,
+            I did not have to learn Javascript. So in general, it was simple to get into React.
         </div>
         <div class="description-block">
-            As I encountered many errors and was unsure about alot of things, I had to google alot. As a result, this
-            project has developed my problem solving skills. This means I developed myself greatly as a programmer as I
-            learnt how to adapt online solutions to cater to my needs and changed my outlook on programming from "just
-            copying code even if I don't understand" to "understand the code, then change it to make it cater to your
-            needs". I also learnt how to properly incorporate and understand other people's code.
+            To ensure that the data is stored between sessions, I used Firebase Realtime Database. I also used Firebase
+            to authenticate my users. To allow for a more seamless user experience, I chose to use React-Beautiful-dnd
+            which is a npm package that helps to ensure that the uses is able to drag and drop the elements in the
+            application.
         </div>
     </section>
     <section id="technology-section">
@@ -74,16 +70,30 @@
         </header>
         <div>
             <article>
-                <a href="https://www.w3schools.com/whatis/whatis_html.asp" class="icon-container" target="_Blank">
-                    <img src="src/technologies/html.png" alt="HTML icon">
+                <a href="https://reactjs.org/" class="icon-container" target="_Blank">
+                    <img src="src/technologies/react.png" alt="react icon">
                 </a>
-                <h2>HTML</h2>
+                <h2>React</h2>
+            </article>
+            <article>
+                <a href="https://firebase.google.com/" class="icon-container" target="_Blank">
+                    <img src="src/technologies/Firebase.png" alt="firebase icon">
+                </a>
+                <h2>Firebase</h2>
+
             </article>
             <article>
                 <a href="https://javascript.info/intro" class="icon-container" target="_Blank">
                     <img src="src/technologies/javascript.png" alt="javascript icon">
                 </a>
                 <h2>Javascript</h2>
+
+            </article>
+            <article>
+                <a href="https://github.com/atlassian/react-beautiful-dnd" class="icon-container" target="_Blank">
+                    <img src="src/technologies/react-beautiful-dnd.png" alt="react-beautiful-dnd icon">
+                </a>
+                <h2>react-beautiful-dnd</h2>
 
             </article>
         </div>

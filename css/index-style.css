@@ -129,6 +129,8 @@ header h1{
 }
 .image-div{
     width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
     min-height: 10px; /*Only needed for IE, as height auto is not supported in that browser.*/
     margin: 10px;
 }

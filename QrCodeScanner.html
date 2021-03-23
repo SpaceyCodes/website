@@ -15,7 +15,7 @@
     <div id="back-button-block">
         <div id="back-block">
             <a href="index.html">
-                <svg width="60px" height="60px" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="white"
+                <svg width="60px" height="60px" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="black"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
@@ -33,10 +33,10 @@
     -->
     <section id="project-section">
         <div id="image-block">
-            <img src="src/project-page-image/Todomasterimg.PNG" alt="screenshot of project">
+            <img src="src/project-page-image/qrcode-image.png" alt="screenshot of source code">
         </div>
         <h2 class="text-block">
-            Todo Master
+            Qr Code Scanner Mobile Application
         </h2>
         <div id="link-block">
             <span id="link-icon">
@@ -48,20 +48,17 @@
                         d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z" />
                 </svg>
             </span>
-            <span><a href="https://todo-app-bb61a.firebaseapp.com/" target="_Blank">Website</a></span>
+            <span><a href="https://github.com/SpaceyCodes/Qr_Code_Scanner" target="_Blank">Github</a></span>
         </div>
         <div class="description-block">
-            Todo Master is a note taking web app. To learn React, I decieded to undertake a project to learn more about
-            it. At the initial stage, I was following a tutorial. However, since I was progressing fairly quickly, I
-            decieded to not follow the tutorial and make the web application by myself. As React is fairly similar to
-            Flutter, I was familiar familiar with States and Components. In addition, as React is a Javascript library,
-            I did not have to learn Javascript. So in general, it was simple to get into React.
+            Flutter is Google's UI toolkit for building mobile applications for IOS and Android. Since Flutter compiles
+            into both IOS and Android, only 1 codebase is needed. Flutter is writen in Dart. After learning Flutter, I
+            wanted to embark on a small project, so I chose to make a QR code scanner. As I was new to Flutter, I needed
+            to problem solve alot and familiarise myself with the syntax.
         </div>
         <div class="description-block">
-            To ensure that the data is stored between sessions, I used Firebase Realtime Database. I also used Firebase
-            to authenticate my users. To allow for a more seamless user experience, I chose to use React-Beautiful-dnd
-            which is a npm package that helps to ensure that the uses is able to drag and drop the elements in the
-            application.
+            After scanning the QR code, the app would save the 'favourite' links. To do this, I used the phone's
+            internal storage, therefore you do not need to be online to store or retrieve the database.
         </div>
     </section>
     <section id="technology-section">
@@ -70,30 +67,17 @@
         </header>
         <div>
             <article>
-                <a href="https://reactjs.org/" class="icon-container" target="_Blank">
-                    <img src="src/technologies/react.png" alt="react icon">
+                <a href="https://flutter.dev/" class="icon-container" target="_Blank">
+                    <img src="src/technologies/Flutter.png" alt="flutter icon">
                 </a>
-                <h2>React</h2>
-            </article>
-            <article>
-                <a href="https://firebase.google.com/" class="icon-container" target="_Blank">
-                    <img src="src/technologies/Firebase.png" alt="firebase icon">
-                </a>
-                <h2>Firebase</h2>
+                <h2>Flutter</h2>
 
             </article>
             <article>
-                <a href="https://javascript.info/intro" class="icon-container" target="_Blank">
-                    <img src="src/technologies/javascript.png" alt="javascript icon">
+                <a href="https://dart.dev/" class="icon-container" target="_Blank">
+                    <img src="src/technologies/Dart.png" alt="dart icon">
                 </a>
-                <h2>Javascript</h2>
-
-            </article>
-            <article>
-                <a href="https://github.com/atlassian/react-beautiful-dnd" class="icon-container" target="_Blank">
-                    <img src="src/technologies/react-beautiful-dnd.png" alt="react-beautiful-dnd icon">
-                </a>
-                <h2>react-beautiful-dnd</h2>
+                <h2>Dart</h2>
 
             </article>
         </div>
