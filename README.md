@@ -2,7 +2,7 @@
 Name: Lee Wen Kang<br />
 Class: P03<br />
 ID: 10203100B<br />
-Website URL: https://npleewenkang.github.io/ID_10203100B_LeeWenKang_Assg01/index.html<br/>
+Website URL: https://spaceycodes.github.io/<br/>
 
 This project is a personal portfolio website. This website includes an landing page, about me page, and project page. This website provides me a platform where I can showcase myself and lets visitors to know more about me and my projects.
 ## Todo
