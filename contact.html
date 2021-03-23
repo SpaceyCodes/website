@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee Wen Kang</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/contact-style.css">
+    <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="icon" href="src/wenkang.png">
+</head>
+
+<body>
+    <div id="back-button-block">
+        <div id="back-block">
+            <a href="index.html">
+                <svg width="60px" height="60px" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="white"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                </svg>
+            </a>
+        </div>
+
+    </div>
+    <!-- This is a contact form, that automatically opens the user's email client. -->
+    <header>Got a question? Ask me now!</header>
+    <section>
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain" autocomplete="off">
+            <div id="name-email">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label for="email">Email Address:<span>*</span></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+            </div>
+            <div id="subject-div">
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" id="subject">
+            </div>
+
+            <div id="content-div">
+                <label for="content">Content:<span>*</span></label>
+                <textarea name="content" id="content" cols="30" rows="10" required></textarea>
+            </div>
+            <div id="submit-button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+    <footer id="footer-content">
+        <!--
+            Footer area. This area is visible on all pages.
+            This area contains social media links and contains my name.
+        -->
+        <div id="socials-content">
+            <div id="github-block">
+                <a href="https://github.com/SpaceyCodes" target="_blank">
+                    <img id='GitHubIMG' src="src/GItHub.png" alt="GitHub logo">
+                </a>
+
+            </div>
+            <div id="linkedin-block">
+                <a href="https://linkedin.com/in/leewenkang/" target="_blank">
+                    <img id='LinkedInIMG' src="src/LinkedIn.png" alt="LinkedIn Logo">
+                </a>
+
+            </div>
+            <div id="email-block">
+                <a href="mailto:spaceycodes@gmail.com" id="emailIMG">
+                    <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-envelope" fill="white"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div id="made-by-text">
+            &copy; Lee Wen Kang
+        </div>
+    </footer>
+</body>
+
+</html>

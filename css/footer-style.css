@@ -1,0 +1,39 @@
+/* 
+This file styles all page's footer. This is to reduce the amount of clutter in each page's css file.
+*/
+/* Footer CSS component */
+#footer-content {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    background-color: #333;
+}
+#socials-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#socials-content>div {
+    display: inline;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+#GitHubIMG {
+    width: 20px;
+    height: auto;
+}
+#LinkedInIMG {
+    width: 20px;
+    height: auto;
+}
+#made-by-text{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 25px);
+    transform: translate(-50%,-50%);
+}

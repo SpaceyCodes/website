@@ -1,0 +1,130 @@
+/* Reference: https://www.w3schools.com/howto/howto_css_timeline.asp */
+/* 
+What I Learnt:
+1) How to use :after :before. 
+*/
+*{
+    box-sizing: border-box;
+}
+#timeline-section>div{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+#timeline-section img{
+    width: 100%;
+}
+#timeline-section>div::after {
+    /* 
+    Means no content after the div, makes the div after Section to move to the center.
+    Alternative way to do this is to "absolute" a child then move it to the center.
+    */
+    content: ''; 
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.container {
+    padding: 10px 40px;
+    width: 50%;
+    position: relative;
+
+}
+.container::after{
+    /* 
+    Creates the triange on the Timeline.
+    ** does not handle the LEFT and RIGHT position .
+    ** ::after is the pseudo-element.
+    */
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: aquamarine;
+    border: white 4px solid;
+    position: absolute;
+    top: 20px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.content{
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    
+}
+.left .content {
+    box-shadow: -7px 7px 7px -3px rgba(0, 0, 0, 0.3);
+}
+.right .content{
+    box-shadow: 7px 7px 7px -3px rgba(0, 0, 0, 0.3);
+}
+.left {
+    /* Moves the container to the left side of the timeline. */
+    left: 0;
+    
+}
+.right {
+    /* Moves the container to the right side of the timeline. */
+    left: 50%;
+    
+}
+.left::after{
+    /* ** handles ".container::after" if the container is left*/
+    right: -12px;
+}
+.right::after{
+    /* ** handles ".container::after" if the container is right*/
+    left: -12px;
+}
+.container::before{
+    /* 
+    ::before is used as ::after is already used to create the 45deg square 
+    ::before is the arrow pointing towards the 45 degree square.
+    */
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    transform: rotate(45deg);
+}
+.left::before{
+    /* Moves ::before to the right side of the container. */
+    right: 35px;
+}
+.right::before{
+    /* Moves ::before to the left side of the container. */
+    left: 35px;
+}
+@media (max-width: 550px){
+    .left {
+        left: 40px; 
+    }
+    .right {
+        left: 40px;
+    }
+    .left .content{
+        box-shadow: 7px 7px 7px -3px rgba(0, 0, 0, 0.3);
+    }
+    .left::after{
+        /* ** handles the LEFT from ".container::after" */
+        left: -12px;
+    }
+    .left::before{
+        left: 35px;
+    }
+    #timeline-section>div::after {
+        left: 40px;
+    }
+    .container {
+        width: calc(100% - 40px);
+    }
+}

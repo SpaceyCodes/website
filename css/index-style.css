@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2{
+    margin: 0;
+    padding: 0;
+}
+/* Landing Area CSS component */
+#landing-banner {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+    background-image: url("../src/landing-page-background/blur-image.png");
+    background-size: cover;
+    background-position: 50% 25%;
+    background-position: 25%
+}
+@media  (max-width: 500px){
+    #landing-banner {
+        background-image: url("../src/landing-page-background/blur-image2.png");
+    }
+}
+#content-block {
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    transform: translate(-80%, -40%);
+    white-space: nowrap;
+    text-align: right; /*for ie, as ie does not support text-align: end*/
+    text-align: end;
+    
+    font-weight: bold;
+    color: white;
+    cursor: initial;
+}
+#name {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#detail {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.link {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.link :hover{
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+}
+@media (max-width: 500px){
+/* Handles font-size in mobile view */
+    #name {
+        font-size: 30px;
+        margin-bottom: 7px;
+    }
+    
+    #detail {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+
+    .link {
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+}
+@media (max-width: 300px){
+    /* Handles font-size in mobile view */
+        #name {
+            font-size: 27px;
+            margin-bottom: 7px;
+        }
+        
+        #detail {
+            font-size: 17px;
+            margin-bottom: 7px;
+        }
+    
+        .link {
+            font-size: 16px;
+            margin-bottom: 7px;
+        }
+    }
+/* Project CSS component */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 4px solid black;
+}
+#project-banner>div {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.each-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 0 0 350px;
+    height: 500px;
+    margin: 20px;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px -9px rgba(0,0,0,0.1);
+}
+.image-div{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    min-height: 10px; /*Only needed for IE, as height auto is not supported in that browser.*/
+    margin: 10px;
+}
+.each-project article {
+    width: 100%;
+}
+.each-project p{
+    margin: 10px;
+    word-wrap: break-word;
+    text-align: justify;
+}
+.each-project h2{
+    text-align: center;
+    font-size: 1.5em;
+}
+.each-project:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.1s;
+    box-shadow: 10px 10px 10px -9px rgba(0,0,0,0.3);
+}
+@media (max-width: 500px){
+    /* Handles font-size in mobile view */
+    .each-project {
+        flex: 0 0 300px;
+        height: 450px;
+    }
+}
+@media (max-width: 300px){
+    /* Handles font-size in mobile view */
+    .each-project {
+        flex: 0 0 250px;
+        height: 500px;
+    }
+    .each-project p{
+        font-size: 15px;
+    }
+}

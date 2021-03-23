@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+/* This page handles the about.html page */
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-image: linear-gradient(to top,#a18cd1 0%, #330867 80%);
+}
+img{
+    width: 100%;
+}
+/* Back button CSS component */
+#back-button-block{
+    width: 100%;
+    position: relative;
+    height: 80px;
+    
+}
+#back-block {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: 0.2s;
+}
+#back-block:hover{
+    left: 5px;
+}
+/* Nav area CSS component */
+nav{
+    position: relative;
+    background-color: ivory;
+}
+nav #heading-text{
+    text-align: center;
+    margin: 10px;
+    font-size: 25px;
+}
+nav div{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nav-button{
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    min-width: 200px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+}
+#triangle{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 20px solid ivory;
+}
+/* MyHistory CSS component */
+#my-history-section {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+#image-block {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-color: white;
+    margin-bottom: 10px;
+}
+#link-block span a{
+    color: #86e3ef;
+}
+.description-block {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+@media (max-width: 800px) {
+    /* If screen size is less than 800px, then change the width of element */
+    .description-block {
+        width: 90%;
+        text-align: justify;
+        font-size: 17px;
+    }
+    #image-block {
+        max-width: 200px;
+        max-height: 200px;
+        
+    }
+}
+@media (max-width: 550px) {
+    /* If screen size is less than 550px, then change the width of element */
+    .description-block {
+        width: 100%;
+        text-align: justify;
+        font-size: 17px;
+    }
+}
+
+.section-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header h1{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin: 20px;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 2px solid white;
+}
+/* Award CSS component */
+#award-section>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#award-section article{
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    display: block;
+    padding: 30px;
+    margin-bottom:30px;
+    box-shadow: 7px 7px 7px -3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+#award-section>div header{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 25px;
+    padding: 0px 2px 0px 2px;
+    border-bottom: 3px dotted black;
+}
+ul{
+    list-style-position: inside;
+    list-style-type: circle;
+    font-size: 18px;
+}
+

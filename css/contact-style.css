@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+*{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-image: linear-gradient(to top,#a18cd1 0%, #330867 80%);
+}
+/* Back button CSS component */
+#back-button-block{
+    width: 100%;
+    position: relative;
+    height: 80px;
+    
+}
+#back-block {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: 0.2s;
+}
+#back-block:hover{
+    left: 5px;
+}
+/* Form CSS component */
+header{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 150px - 80px - 40px); /*screen size - backbutton height - footer height - header height*/
+}
+form{
+    width: 90%;
+    max-width: 1000px;
+}
+input{
+    outline: none; /*Removes highlight from Chrome browsers */
+    display: block;
+    width: 100%;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+}
+textarea{
+    outline: none; /*Removes highlight from Chrome browsers */
+    color: black;
+    display: block;
+    width: 100%;
+    resize: none;
+    font-size: 16px;
+}
+span{
+    color: red;
+}
+#name-email {
+    display: flex;
+    flex-direction: row;
+}
+#name-email div {
+    width: 50%;
+    margin: 10px;
+}
+#subject-div{
+    margin: 10px;
+    margin-top: 0;
+}
+#content-div{
+    margin: 10px;
+    margin-top: 0;
+}
+#submit-button{
+    margin: 10px;
+    margin-top: 0;
+}
+
