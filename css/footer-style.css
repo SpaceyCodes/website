@@ -37,3 +37,20 @@ This file styles all page's footer. This is to reduce the amount of clutter in e
     top: calc(50% + 25px);
     transform: translate(-50%,-50%);
 }
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+
+
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

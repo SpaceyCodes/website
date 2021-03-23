@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
 *{
+    
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -15,6 +16,7 @@ img{
 }
 
 body{
+    background-color: #c0dbff;
     font-family: 'Roboto', sans-serif;
 }
 h1,h2{
@@ -27,16 +29,7 @@ h1,h2{
     position: relative;
     width: 100%;
     height: 100vh;
-    margin-bottom: 50px;
-    background-image: url("../src/landing-page-background/blur-image.png");
-    background-size: cover;
-    background-position: 50% 25%;
-    background-position: 25%
-}
-@media  (max-width: 500px){
-    #landing-banner {
-        background-image: url("../src/landing-page-background/blur-image2.png");
-    }
+    margin-bottom: 200px;
 }
 #content-block {
     position: absolute;
@@ -46,12 +39,11 @@ h1,h2{
     white-space: nowrap;
     text-align: right; /*for ie, as ie does not support text-align: end*/
     text-align: end;
-    
-    font-weight: bold;
-    color: white;
+    color: black;
     cursor: initial;
 }
 #name {
+    font-weight: bold;
     font-size: 40px;
     margin-bottom: 10px;
 }
@@ -65,8 +57,7 @@ h1,h2{
     margin-bottom: 10px;
 }
 .link :hover{
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.8);
 }
 @media (max-width: 500px){
 /* Handles font-size in mobile view */
@@ -112,7 +103,6 @@ header h1{
     display: inline;
     padding-left: 10px;
     padding-right: 10px;
-    border-bottom: 4px solid black;
 }
 #project-banner>div {
     font-family: 'Roboto', sans-serif;
@@ -136,8 +126,6 @@ header h1{
     box-shadow: 10px 10px 10px -9px rgba(0,0,0,0.1);
 }
 .image-div{
-    border: 1px solid black;
-    border-radius: 5px;
     width: 80%;
     min-height: 10px; /*Only needed for IE, as height auto is not supported in that browser.*/
     margin: 10px;
@@ -155,7 +143,7 @@ header h1{
     font-size: 1.5em;
 }
 .each-project:hover{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #f8f8f8;
     transition: 0.1s;
     box-shadow: 10px 10px 10px -9px rgba(0,0,0,0.3);
 }
