@@ -17,6 +17,7 @@ img{
 
 body{
     background-color: #c0dbff;
+    /* background-color: #eee; */
     font-family: 'Roboto', sans-serif;
 }
 h1,h2{
@@ -97,6 +98,14 @@ h1,h2{
 }
 /* Project CSS component */
 header{
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: solid 3px #989898;
+    border-right: none;
+    border-left: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,6 +166,10 @@ header h1{
         flex: 0 0 300px;
         height: 450px;
     }
+    header{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 @media (max-width: 300px){
     /* Handles font-size in mobile view */
@@ -166,5 +179,9 @@ header h1{
     }
     .each-project p{
         font-size: 15px;
+    }
+    header{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
